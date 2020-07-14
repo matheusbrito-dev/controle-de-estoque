@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sistema</title>
+</head>
+<body>
+	<H1>Hello Java Web World</H1>
+	<h3>Matheus de Brito Vieira Martins</h3>
+	<h4>Ourinhos</h4>
+
+	<form action="hello" method="post">
+
+		<label>Texto</label>
+		<input type="text" name="Texto" id="Texto">
+		<button type="submit">Enviar via POST</button>
+	</form>
+
+	<a href="javascript:enviar();">Enviar via GET</a>
+
+	<script type="text/javascript">
+		function enviar() {
+			window.location.href = "hello?Texto=" + document.getElementById('Texto').value;
+		}
+	</script>
+</body>
+</html>
